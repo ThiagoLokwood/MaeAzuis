@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Página não encontrada - Thiago Silva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { 
+            font-family: 'Inter', sans-serif; 
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+        }
+        .gradient-bg { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        @media print { body { display: none !important; } }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen flex items-center justify-center text-white px-4" oncontextmenu="return false;">
+
+    <div class="max-w-sm w-full text-center glass-card p-8 rounded-3xl shadow-2xl">
+        <div class="text-6xl mb-6 text-green-400">
+            <i class="fab fa-whatsapp animate-bounce"></i>
+        </div>
+        
+        <h1 class="text-2xl font-bold mb-3">Link Expirado ou Inválido</h1>
+        
+        <p class="text-slate-300 mb-8">
+            Não se preocupe! Você pode solicitar o acesso à proposta atualizada diretamente comigo via WhatsApp.
+        </p>
+        
+        <a href="https://wa.me/5511912530220?text=Olá%20Thiago%20gostaria%20de%20ter%20acesso%20a%20propostas." 
+           class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full transition-all flex items-center justify-center gap-2 text-lg shadow-lg">
+            <i class="fab fa-whatsapp"></i>
+            Falar com Thiago
+        </a>
+
+        <div class="mt-8 pt-6 border-t border-white/10 text-[10px] text-slate-500 uppercase tracking-widest">
+            Thiago Silva - Soluções Interativas
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.onkeydown = e => {
+            if (e.ctrlKey && (e.keyCode === 85 || e.keyCode === 83 || e.keyCode === 123)) return false;
+        };
+    </script>
+</body>
+</html>
